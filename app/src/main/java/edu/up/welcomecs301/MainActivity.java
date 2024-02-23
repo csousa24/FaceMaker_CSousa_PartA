@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
         randomFaceButton = findViewById(R.id.randomFaceButton);
         faceSurfaceView = findViewById(R.id.faceSurfaceView);
 
+        //https://stackoverflow.com/questions/2784081/android-create-spinner-programmatically-from-array
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, Face.getHairStyles());
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         hairStyleSpinner.setAdapter(adapter);
